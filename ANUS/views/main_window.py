@@ -42,7 +42,15 @@ class MainWindow(QMainWindow):
 
             container_widget = QWidget()
             container_layout = QVBoxLayout(container_widget)
-
+            container_widget.setStyleSheet (""" 
+                QWidget {
+                    border: 2px solid #444;
+                    border-radius: 8px;
+                    background-color: #222;
+                    padding: 8px;
+                    margin: 8px;
+            }
+            """)
             title_label = QLabel(category_name)
             title_label.setStyleSheet("font-weight: bold; font-size: 16px;")
 
